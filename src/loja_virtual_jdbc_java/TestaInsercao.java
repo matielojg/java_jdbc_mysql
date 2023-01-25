@@ -8,10 +8,12 @@ import java.sql.Statement;
 
 public class TestaInsercao {
 	public static void main(String[] args) throws SQLException {
-		Connection factory = DriverManager
-				.getConnection("jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC", "root", "");
+		
+		ConnectionFactory connectionFactory = new ConnectionFactory();
+		Connection connection = connectionFactory.recuperarConexao();
 
-		Statement stm = factory.createStatement();
+		
+		Statement stm = connection.createStatement();
 		stm.execute("INSERT INTO PRODUTO (nome, descricao) VALUES ('Mouse', 'Mouse sem fio')",
 				Statement.RETURN_GENERATED_KEYS);
 		ResultSet rst = stm.getGeneratedKeys();
@@ -22,6 +24,6 @@ public class TestaInsercao {
 		}
 
 		System.out.println("Fechando Conexao!");
-		factory.close();
+		connection.close();
 	}
 }
