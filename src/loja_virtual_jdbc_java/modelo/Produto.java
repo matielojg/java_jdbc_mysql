@@ -29,4 +29,10 @@ public class Produto {
 		return descricao;
 	}
 
+	public Produto(Integer id, String nome, String descricao) {
+		this.id = id;
+		this.nome = nome;
+		this.descricao = descricao;
+	}
+
 }
