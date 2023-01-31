@@ -10,6 +10,11 @@ import loja_virtual_jdbc_java.modelo.Produto;
 
 public class TestaInsercaoEListagemComProduto {
 
+	/**
+	 * 
+	 * @param args
+	 * @throws SQLException
+	 */
 	public static void main(String[] args) throws SQLException {
 
 		//Produto comoda = new Produto("Comoda1", "Comoda Vertical 1");
