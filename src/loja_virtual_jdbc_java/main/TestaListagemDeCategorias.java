@@ -20,7 +20,7 @@ public class TestaListagemDeCategorias {
 			listaDeCategorias.stream().forEach(ct -> {
 				System.out.println(ct.getNome());
 				try {
-					for (Produto produto : new ProdutoDAO(connection).listar()) {
+					for (Produto produto : new ProdutoDAO(connection).buscar(ct)) {
 						System.out.println(ct.getNome() + " - " + produto.getNome());
 					}
 				} catch (SQLException e) {

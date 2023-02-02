@@ -19,7 +19,7 @@ public class CategoriaDAO {
 
 	public List<Categoria> listar() throws SQLException {
 		List<Categoria> categorias = new ArrayList<>();
-
+		System.out.println("Executando a query de listar categoria");
 		String sql = "SELECT ID, NOME FROM CATEGORIA";
 
 		try (PreparedStatement pstm = connection.prepareStatement(sql)) {
