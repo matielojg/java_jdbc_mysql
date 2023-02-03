@@ -1,9 +1,11 @@
-package loja_virtual_jdbc_java;
+package classes_de_teste;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import loja_virtual_jdbc_java.ConnectionFactory;
 
 
 public class TestaListagem {

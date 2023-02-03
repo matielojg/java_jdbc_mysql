@@ -1,4 +1,4 @@
-package loja_virtual_jdbc_java.main;
+package classes_de_teste;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -6,7 +6,6 @@ import java.util.List;
 
 import loja_virtual_jdbc_java.ConnectionFactory;
 import loja_virtual_jdbc_java.dao.ProdutoDAO;
-import loja_virtual_jdbc_java.modelo.Categoria;
 import loja_virtual_jdbc_java.modelo.Produto;
 
 public class TestaInsercaoEListagemComProduto {

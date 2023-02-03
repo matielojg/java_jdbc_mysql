@@ -16,12 +16,15 @@ public class ConnectionFactory {
 		comboPooledDataSource.setPassword("");
 
 		comboPooledDataSource.setMaxPoolSize(15);
-		
+
 		this.datasource = comboPooledDataSource;
 	}
 
-	public Connection recuperarConexao() throws SQLException {
-
-		return this.datasource.getConnection();
+	public Connection recuperarConexao() {
+		try {
+			return this.datasource.getConnection();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 }

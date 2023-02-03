@@ -1,4 +1,4 @@
-package loja_virtual_jdbc_java.main;
+package classes_de_teste;
 
 import java.sql.Connection;
 import java.sql.SQLException;
