@@ -1,6 +1,4 @@
-# JPA Avançado
-
-### [Curso Alura : Java e JDBC: trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
+# [Curso Alura : Java e JDBC: trabalhando com um banco de dados](https://cursos.alura.com.br/course/jdbc-dao-persistencia)
 
 ## Resultado obtido:
 
